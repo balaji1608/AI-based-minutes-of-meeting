@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="javascript:generatePdf()" method="POST">
+        <button type="submit">Click here </button>
+    </form>
+    <br>
+    <br>
+    <h2>Youtube Summary</h2>
+    <form action = "javascript:submit()", method="POST">
+        <input type="text" name="url" id="input1">
+        <button type="submit">Submit URL</button>
+    </form>
+    <h2>Summary</h2>
+    <div id = "summary" style="text-align:  center;"></div>
+    <script src="temp.js"></script>
+    <br>
+    <br>
+    <form action="javascript:convertAudio()" method="POST">
+        <button type="submit">Convert Audio</button>
+    </form>
+</body>
+</html>
