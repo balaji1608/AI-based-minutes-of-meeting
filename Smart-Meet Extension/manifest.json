@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+
+  "name": "Smart-Meet Capture",
+  "description": "This extension captures the meetings and help generate AI summarized notes",
+  "version": "1.1.1",
+  "icons": {
+    "128":"message.png"
+    },
+
+  "browser_action": {
+    "default_icon": "message.png",
+    "default_popup": "popup.html",
+    "default_title": "Smart-Meet Assitant"
+  },
+  "background": {
+    "scripts": ["background.js", "worker.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "tabCapture",
+    "downloads",
+    "storage"
+  ],
+  "commands": {
+    "start": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Start Capture"
+    },
+    "stop": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "MacCtrl+Shift+X"
+      },
+      "description": "Stop Capture"
+    }
+  }
+}

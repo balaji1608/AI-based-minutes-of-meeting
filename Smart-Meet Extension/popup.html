@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Smart-Meet Assistant</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" type="text/css">
+  </head>
+  <body>
+    <div class="header"><img src="./message.png"/> <h1>Smart Meet Assistant</h1></div>
+
+    <div id="status"></div>
+    <div class="buttonContainer">
+      <div class="button" id="start">Start Capture</div>
+      <div class="button" id="finish">Save Capture</div>
+      <div class="button" id="cancel">Cancel Capture</div>
+    </div>
+    <ul> Hotkeys:
+      <li id="startKey">Ctrl/Command + Shift +   to start capture on current tab</li>
+      <li id="endKey">Ctrl/Command + Shift + X to stop capture on current tab</li>
+    </ul>
+    <p class="extra">Hotkeys may not work if another extension is using the same hotkeys</p>
+    <div class="links">
+      <p id="Website">Smart Meet Website</p>
+    </div>
+  </body>
+</html>
